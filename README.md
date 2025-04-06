@@ -57,4 +57,13 @@ samples, guidance on mobile development, and a full API reference.
    
   <img src="screen-docs/gif/P1-S8.gif" alt="GIF Soal 8" width="250" />
 
+----
 
+### **Praktikum 4**
+#### <u>Soal 9</u>
+- Langkah 2 (subscription),untuk melakukan langganan (subscription) terhadap stream, sekaligus memproses data yang masuk. Stream tersebut dimanipulasi menggunakan transformer, lalu hasil akhirnya akan didengarkan oleh listen(). Di dalam listen, setiap data yang masuk akan diolah dan ditampilkan ke UI melalui setState.
+- Langkah 6 (dispose subscription.camcel), untuk menghentikan aliran data dan membersihkan sumber daya (resource) ketika widget sudah tidak aktif. numberStream.close() akan menutup StreamController, sedangkan subscription.cancel() akan menghentikan proses langganan terhadap stream. Ini penting untuk menghindari kebocoran memori (memory leak).
+- Langkah 8 (edit addRandomNumber),  untuk menambahkan angka acak ke dalam stream. Jika StreamController masih terbuka (belum ditutup), maka angka akan dikirimkan ke stream. Namun, jika sudah ditutup, maka akan ditampilkan nilai -1 sebagai tanda bahwa data tidak bisa lagi dikirimkan.
+
+  <img src="screen-docs/gif/P1-S9.gif" alt="GIF Soal 9" width="600" />
+  
