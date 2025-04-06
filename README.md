@@ -75,8 +75,13 @@ samples, guidance on mobile development, and a full API reference.
 
 
 #### <u>Soal 11</u>
+- Karena stream telah di define dengan propert BroadcastStream. sehingga data yg masuk dan ditampilkan menjadi 2 value (subscription dan subscription2)
 
+  <img src="screen-docs/gif/P1-S11.gif" alt="GIF Soal 11" width="300" />  
 
+----
+
+### Praktikum 6
 #### <u>Soal 12</u>
 
 ----
