@@ -67,3 +67,19 @@ samples, guidance on mobile development, and a full API reference.
 
   <img src="screen-docs/gif/P1-S9.gif" alt="GIF Soal 9" width="600" />
   
+----
+
+### **Praktikum 5**
+#### <u>Soal 10</u>
+- Karena stream hanya bisa digunakan untuk 1 subscriptiom. Apabila ingin melakukan lebih dari 1 subsxription, maka perlu menggunakan broadcast Stream.
+
+
+#### <u>Soal 11</u>
+
+
+#### <u>Soal 12</u>
+
+----
+
+### **Praktikum 7**
+#### <u>Soal 13</u>
