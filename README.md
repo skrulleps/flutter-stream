@@ -17,12 +17,15 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Display
 ### Praktikum 1
-#### Soal 1
+#### <u>Soal 1</u>
 <img src="screen-docs/SC-S1.png" alt="Soal 1" width="400" />
 
-#### Soal 2
+#### <u>Soal 2</u>
 <img src="screen-docs/SC-S2.png" alt="Soal 2" width="400" />
 
-### Soal 3
+### <u>Soal 3</u>
 - yield* merupakan delegating statement dalam konteks generator function. Secara singkat, fungsinya mirip seperti return, tetapi yield* meneruskan semua nilai dari generator lain, satu per satu, ke dalam aliran saat ini.
 - Kode tersebut memerintahkan agar semua warna yang ada di dalam list diteruskan ke dalam stream satu per satu, dengan jeda 1 detik antar warna, secara berulang.
+
+### <u>Soal 4</u> 
+<img src="screen-docs/gif/P1-S4.gif" alt="GIF Soal 4" width="250" />
