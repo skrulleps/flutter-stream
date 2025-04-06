@@ -19,3 +19,6 @@ samples, guidance on mobile development, and a full API reference.
 ### Praktikum 1
 #### Soal 1
 <img src="screen-docs/SC-S1.png" alt="Soal 1" width="400" />
+
+#### Soal 2
+<img src="screen-docs/SC-S2.png" alt="Soal 2" width="400" />
