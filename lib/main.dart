@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stream_fadhlan/stream.dart';
+import 'dart:async';
+import 'dart:math';
 
 void main() {
   runApp(const MyApp());
@@ -36,6 +38,9 @@ class StreamHomePage extends StatefulWidget {
 class _StreamHomePageState extends State<StreamHomePage> {
   Color bgColor = Colors.white;
   late ColorStream colorStream;
+  int lastNumber = 0;
+  late StreamController numberStreamController;
+  late NumberStream numberStream;
 
   void changeColor() {
     colorStream.getColors().listen((eventColor) {
@@ -45,11 +50,31 @@ class _StreamHomePageState extends State<StreamHomePage> {
     });
   }
 
+  void addRandomNumber() {
+    Random random = Random();
+    int myNum = random.nextInt(10);
+    numberStream.addNumberToSink(myNum);
+  }
+
   @override
   void initState() {
     super.initState();
-    colorStream = ColorStream();
-    changeColor();
+    numberStream = NumberStream();
+    numberStreamController = numberStream.controller;
+    Stream stream = numberStreamController.stream;
+    stream.listen((event) {
+      setState(() {
+        lastNumber = event;
+      });
+    });
+    // colorStream = ColorStream();
+    // changeColor();
+  }
+
+  @override
+  void dispose() {
+    numberStream.close();
+    super.dispose();
   }
 
   @override
@@ -59,10 +84,20 @@ class _StreamHomePageState extends State<StreamHomePage> {
           title: Text('Stream dlan'),
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         ),
-        body: Container(
-          decoration: BoxDecoration(
-            color: bgColor,
+        body:SizedBox(
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(lastNumber.toString()),
+              ElevatedButton(
+                onPressed: () => addRandomNumber(),
+                child: const Text('Add Random Number'),
+              ),
+            ],
           ),
-        ));
+        ),
+        );
   }
 }
