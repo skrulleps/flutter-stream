@@ -22,3 +22,7 @@ samples, guidance on mobile development, and a full API reference.
 
 #### Soal 2
 <img src="screen-docs/SC-S2.png" alt="Soal 2" width="400" />
+
+### Soal 3
+- yield* merupakan delegating statement dalam konteks generator function. Secara singkat, fungsinya mirip seperti return, tetapi yield* meneruskan semua nilai dari generator lain, satu per satu, ke dalam aliran saat ini.
+- Kode tersebut memerintahkan agar semua warna yang ada di dalam list diteruskan ke dalam stream satu per satu, dengan jeda 1 detik antar warna, secara berulang.
