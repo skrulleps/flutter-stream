@@ -29,3 +29,6 @@ samples, guidance on mobile development, and a full API reference.
 
 ### <u>Soal 4</u> 
 <img src="screen-docs/gif/P1-S4.gif" alt="GIF Soal 4" width="250" />
+
+### <u>Soal 5</u>
+- Tidak ada perbedaan signifikan dalam fungsionalitas jika menggunakan .listen() tanpa async, karena .listen() tidak perlu ditunggu hasilnya. Namun, jika kita menggunakan await, seperti pada await for, maka fungsi tersebut harus ditandai sebagai async. Ini karena await hanya bisa digunakan di dalam fungsi async.

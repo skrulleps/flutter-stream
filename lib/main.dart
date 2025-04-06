@@ -37,12 +37,12 @@ class _StreamHomePageState extends State<StreamHomePage> {
   Color bgColor = Colors.white;
   late ColorStream colorStream;
 
-  void changeColor() async{
-    await for (var eventColor in colorStream.getColors()) {
+  void changeColor() {
+    colorStream.getColors().listen((eventColor) {
       setState(() {
         bgColor = eventColor;
       });
-    }
+    });
   }
 
   @override
@@ -55,15 +55,14 @@ class _StreamHomePageState extends State<StreamHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Stream dlan'),
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-      ),
-      body: Container(
-        decoration: BoxDecoration(
-          color: bgColor,
+        appBar: AppBar(
+          title: Text('Stream dlan'),
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         ),
-      )
-    );
+        body: Container(
+          decoration: BoxDecoration(
+            color: bgColor,
+          ),
+        ));
   }
 }
