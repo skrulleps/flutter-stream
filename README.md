@@ -49,3 +49,12 @@ samples, guidance on mobile development, and a full API reference.
 
 -----
 
+### **Praktikum 3**
+#### <u>Soal 8</u>  
+- Langkah 1 (initialized StreamTransformer), berfungsi untuk menginisialisasi variabel sebelum dibuat struktur function kode nya.
+- Langkah 2 (menambahkan variabel transformer => initState), berfungsi untuk memanipulasi data yg kemudian di ubah oleh "handleData", menangani eror "handleError", dan menutup sink saat stream selesai "handleDone".
+- Langkah 3 (Edit stream), berfungsi sebagai listener agar data yg sebelumnya telah dimanipulasi bisa ditampilkan 
+   
+  <img src="screen-docs/gif/P1-S8.gif" alt="GIF Soal 8" width="250" />
+
+
